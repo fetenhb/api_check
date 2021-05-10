@@ -1,0 +1,218 @@
+/* defaults */
+/* =============================================== */
+
+html,
+body {
+  --light: hsl(0, 0%, 100%);
+  --background: linear-gradient(
+    to right bottom,
+    hsl(236, 50%, 50%),
+    hsl(195, 50%, 50%)
+  );
+
+  justify-content: center;
+  align-items: center;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans",
+    sans-serif;
+
+  background: linear-gradient(
+    to bottom,
+    hsl(236, 50%, 98%),
+    hsl(236, 50%, 94%)
+  );
+}
+
+a,
+a:link {
+  font-family: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+/* modal */
+/* =============================================== */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  background: hsla(0, 0%, 40%, 0.6);
+}
+
+/* using :target */
+.modal-container:target {
+  display: flex;
+}
+
+.modall {
+  width: 40rem;
+  padding: 4rem 2rem;
+  border-radius: 0.8rem;
+
+  color: var(--light);
+  background: var(--background);
+  box-shadow: 0.4rem 0.4rem 2.4rem 0.2rem hsla(236, 50%, 50%, 0.3);
+  position: relative;
+
+  overflow: hidden;
+}
+
+.modal__details {
+  text-align: center;
+
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.4);
+}
+
+.modal__title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.modal__description {
+  margin-top: 2rem;
+
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.modal__text {
+  padding: 0 4rem;
+  margin-bottom: 4rem;
+
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.modal__text::before {
+  content: "";
+
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+
+  width: 18rem;
+  height: 18rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  border-radius: 100rem;
+
+  pointer-events: none;
+}
+
+.modal__btn {
+  padding: 0.7rem 1.1rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.4);
+  border-radius: 100rem;
+
+  color: inherit;
+  background: transparent;
+  font-size: 1.1rem;
+  font-family: inherit;
+  letter-spacing: 0.2rem;
+
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.modal__btn:hover,
+.modal__btn:focus {
+  border-color: hsla(0, 0%, 100%, 0.6) !important;
+  transform: translateY(-0.2rem) !important;
+}
+
+/* links */
+/* =============================================== */
+.link-1 {
+  font-size: 1.8rem !important;
+  width: 16rem;
+  height: 4rem;
+  top: 2rem;
+  right: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.2s;
+  color: var(--light) !important;
+  background: var(--background) !important;
+  box-shadow: 0.4rem 0.4rem 2.4rem 0.2rem hsla(236, 50%, 50%, 0.3) !important;
+  border-radius: 100rem !important;
+  padding: 1.4rem 3.2rem !important;
+
+  margin-bottom: 50px !important;
+}
+
+.link-1:hover,
+.link-1:focus {
+  transform: translateY(-0.2rem) !important;
+  box-shadow: 0 0 4.4rem 0.2rem hsla(236, 50%, 50%, 0.4) !important;
+}
+
+.link-2 {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.4);
+  border-radius: 100rem;
+
+  color: inherit;
+  font-size: 2.2rem;
+
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.2s;
+}
+
+.link-2::before {
+  content: "×";
+
+  transform: translateY(-0.1rem);
+}
+
+.link-2:hover,
+.link-2:focus {
+  border-color: hsla(0, 0%, 100%, 0.6) !important;
+  transform: translateY(-0.2rem) !important;
+}
+input {
+  background-color: transparent;
+  border: none;
+  width: 300px;
+  height: 40px;
+  outline: none;
+  border-radius: 10px;
+  color: var(--light);
+  background: linear-gradient(
+    to right bottom,
+    hsl(0deg 0% 77% / 31%),
+    hsl(195deg 84% 80% / 50%)
+  );
+}
+input :read-write,
+input :hover,
+input ::content {
+  background-color: transparent;
+  border: none;
+  background: linear-gradient(
+    to right bottom,
+    hsl(0deg 0% 77% / 31%),
+    hsl(195deg 84% 80% / 50%)
+  );
+}

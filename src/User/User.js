@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
 import "../User/User.css";
-const User = ({ el }) => {
+const User = ({ el, i, image }) => {
   return (
     <div>
       <Link to={`/User/${el.id}`}>
         <div class="profile-card-6" style={{ margin: "10px" }}>
           <img
-            src="https://cdnb.artstation.com/p/assets/images/images/009/836/467/medium/maria-bo-schatzis-stream-profilpicture.jpg?1521139318"
+            src={image[el.id - 1]}
             class="img img-responsive"
+            style={{ width: "100%" }}
           />
           <div class="profile-name">{el.name}</div>
           <div class="profile-position">{el.email}</div>

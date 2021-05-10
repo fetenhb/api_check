@@ -3,11 +3,11 @@ import "../UserDetails/UserDetails.css";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 const UserDetails = (props) => {
-  const userFound = props.listOfUSer.find(
-    (user) => user.x == props.match.params.title
+  const userFound = props.userData.find(
+    (user) => user.id == props.match.params.name
   );
   return (
-    <div>
+    <div style={{ height: "753px" }}>
       <div class="page-content page-container" id="page-content">
         <div class="padding">
           <div class="row container d-flex justify-content-center">
@@ -17,15 +17,15 @@ const UserDetails = (props) => {
                   <div class="col-sm-4 bg-c-lite-green user-profile">
                     <div class="card-block text-center text-white">
                       <div class="m-b-25">
-                        {" "}
+                        {console.log(props.image)}
                         <img
-                          src="https://img.icons8.com/bubbles/100/000000/user.png"
+                          src={props.image[userFound.id - 1]}
                           class="img-radius"
                           alt="User-Profile-Image"
                         />{" "}
                       </div>
                       <h6 class="f-w-600">{userFound && userFound.name}</h6>
-                      <p>{userFound && userFound.company.name}</p>{" "}
+                      <p>{userFound && userFound.company.catchPhrase}</p>{" "}
                       <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                     </div>
                   </div>

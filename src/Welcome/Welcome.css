@@ -1,0 +1,21 @@
+.cont {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 15%;
+}
+
+.title {
+  font-weight: 800;
+  color: transparent;
+  font-size: 150px;
+  background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg")
+    repeat;
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  position: relative;
+  text-align: center;
+  letter-spacing: -8px;
+}

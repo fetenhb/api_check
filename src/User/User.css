@@ -62,7 +62,7 @@ body {
 
 .container-fluid,
 .container {
-  max-width: 1200px;
+  max-width: 1200px !important;
 }
 
 .card-container {
@@ -446,10 +446,13 @@ body {
 
 .profile-card-6 .profile-position {
   position: absolute;
-  color: rgba(255, 255, 255, 0.4);
+  color: #1389ff;
+
   left: 30px;
   top: 100px;
   transition: all 0.15s linear;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .profile-card-6 .profile-overview {

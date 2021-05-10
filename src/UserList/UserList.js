@@ -1,20 +1,26 @@
 import React from "react";
+import { useEffect } from "react";
+
 import User from "../User/User";
 import "../User/User.css";
 
-const UserList = ({ listOfUSer }) => {
+import "../UserList/UserList.scss";
+const UserList = ({ userData, image }) => {
   return (
-    <div>
-      <header>
-        <div class="container text-center">
-          <div class="logo"></div>
-        </div>
-      </header>
-      <div class="container" style={{ display: "flex", flexWrap: "wrap" }}>
-        {listOfUSer.map((el, i) => (
-          <User el={el} key={i} />
-        ))}
-      </div>
+    <div
+      class="container"
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+
+        marginLeft: "17%",
+        marginRight: "10%",
+      }}
+    >
+      {userData.map((el, i) => (
+        <User el={el} key={i} image={image} />
+      ))}
+      {console.log(userData)}
     </div>
   );
 };
