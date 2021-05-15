@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Texturina&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&family=Texturina&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto:wght@300&family=Texturina&family=Varela+Round&display=swap");
 .padding {
   padding: 3rem !important;
 }
@@ -80,6 +83,8 @@ h6 {
 
 .m-b-20 {
   margin-bottom: 20px;
+  font-family: "Roboto";
+  font-size: 20px;
 }
 
 .p-b-5 {
@@ -92,12 +97,19 @@ h6 {
 
 .m-b-10 {
   margin-bottom: 10px;
+  font-family: "Pangolin";
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: 300 !important;
 }
 
 .text-muted {
   color: #919aa3 !important;
+  font-family: "Varela Round";
 }
-
+.txt {
+  font-family: "Texturina";
+}
 .b-b-default {
   border-bottom: 1px solid #e0e0e0;
 }

@@ -17,9 +17,10 @@ const UserList = ({ userData, image }) => {
         marginRight: "10%",
       }}
     >
-      {userData.map((el, i) => (
-        <User el={el} key={i} image={image} />
-      ))}
+      {userData.map(
+        (el, i) => (console.log(i), (<User el={el} i={i} image={image} />))
+      )}
+
       {console.log(userData)}
     </div>
   );

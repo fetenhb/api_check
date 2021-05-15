@@ -14,12 +14,11 @@ const AddUser = (props) => {
   const addNewUser = (e) => {
     e.preventDefault();
     props.add({
-      id: dd,
       name: name,
       email: email,
       phone: "02155877",
       company: {
-        catchPhrase: " azerty",
+        catchPhrase: " company",
       },
       website: "ggg@gggg",
       address: {
@@ -31,8 +30,6 @@ const AddUser = (props) => {
     setEmail("");
   };
 
-  console.log(dd);
-  console.log(name);
   return (
     <div style={{ marginTop: "250px", marginLeft: "650px" }}>
       <a href="#modal-opened" class="link-1" id="modal-closed">
@@ -68,9 +65,9 @@ const AddUser = (props) => {
               <br />
             </form>
           </div>{" "}
-          <button class="modal__btn" onClick={addNewUser}>
+          <a class="modal__btn" onClick={addNewUser}>
             Add &rarr;{" "}
-          </button>
+          </a>
           <a href="#modal-closed" class="link-2"></a>
         </div>
       </div>

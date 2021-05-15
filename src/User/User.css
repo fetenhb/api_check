@@ -432,7 +432,7 @@ body {
   position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: bold;
   color: #fff;
   padding: 15px 20px;
@@ -449,7 +449,7 @@ body {
   color: #1389ff;
 
   left: 30px;
-  top: 100px;
+  top: 70px;
   transition: all 0.15s linear;
   font-weight: 600;
   font-size: 14px;
